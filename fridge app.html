@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width", "initial-scale=1">
+    <title>Fridge App</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+  <div class = "format">
+    <div class = "column1">
+      <div class = "fridge-app">
+      <h2>fridge<img src = "images/fridge.png"></h2>
+      <div class = "row">
+        <input type = "text" id = "input-box" placeholder = "stock shelves...">
+        <button onclick="addTask()"> stock </button>
+      </div>
+      <ul id= "fridge-container" class = "draggable">
+        <!-- <li class = "checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ul>
+     
+      <div class = "freezer-app">
+        <h2>freezer <img src = "images/freezer.webp"></h2>
+        <div class = "drop-zone"></div>
+        <ul id = "drop-container" class = "draggable">
+          <!--freezer items-->
+        </ul>
+      </div>
+    
+    </div>
+    </div>
+    
+    
+    <div class = "column2">
+      <div class = "grocery-list-app">
+      <h2>grocery list <img src = "images/list.png"></h2>
+      <div class = "row2">
+        <input type = "text" id = "input-box2" placeholder="jot down...">
+        <button onclick="addTask2()"> jot </button>
+      </div>
+      <ul id = "grocery-container">
+        <!-- <li class = "checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ul>
+      
+    </div>
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  
+<script src = "script.js"></script>  
+  
+</body>
+</html>
